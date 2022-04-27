@@ -18,7 +18,7 @@ public class ObjectClicker : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit, 100f))
+            if (Physics.Raycast(ray, out hit, 3f))
             {
                 if (hit.transform != null && hit.transform.gameObject.layer == treeLayer)
                 {
